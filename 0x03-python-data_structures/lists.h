@@ -1,6 +1,27 @@
-#!/usr/bin/python3
-def add_tuple(tuple_a=(), tuple_b=()):
-    a, b = len(tuple_a), len(tuple_b)
-    new_tuple = ((tuple_a[0] if a >= 1 else 0) + (tuple_b[0] if b >= 1 else 0),
-                 (tuple_a[1] if a >= 2 else 0) + (tuple_b[1] if b >= 2 else 0))
-    return new_tuple
+#ifndef LISTS_H
+#define LISTS_H
+
+#include <stdlib.h>
+
+/**
+ * struct listint_s - singly linked list
+ * @n: integer
+ * @next: points to the next node
+ *
+ * Description: singly linked list node structure
+ * for Holberton project
+ */
+typedef struct listint_s
+{
+  int n;
+  struct listint_s *next;
+} listint_t;
+
+size_t print_listint(const listint_t *h);
+listint_t *add_nodeint_end(listint_t **head, const int n);
+void free_listint(listint_t *head);
+
+int is_palindrome(listint_t **head);
+listint_t *reverse_listint(listint_t **head);
+
+#endif
