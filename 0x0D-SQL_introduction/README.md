@@ -1,5 +1,6 @@
 # MySQL - Introduction
 #Author: Joshpee
+![alt](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/285/s7kpNYq.png)
 
 Project done during **Full Stack Software Engineering studies** at **Holberton School**. It aims to learn about databases, relational databases, subqueries, tables, **MySQL** statements and functions.
 
